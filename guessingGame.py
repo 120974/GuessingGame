@@ -1,13 +1,14 @@
 import random
 
-number = random.randrange(1, 9)
+number = random.randrange(1, 50)
 
 chanceCount=0
 
-print("Print a number between 1 and 9")
-print("you have 5 chances. Good Luck.")
+print("Number guessing game")
+print("Guess a number (between 1 and 50)")
+print("You have 5 chances.")
 
-while chanceCount < 5:
+while chanceCount < 10:
     guess = int(input("Enter your guess: "))
     chanceCount = chanceCount + 1
 
